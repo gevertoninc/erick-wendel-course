@@ -18,7 +18,7 @@ async function main() {
 
     console.log('Pesos', pesos)
 
-    total = pesos.reduce((anterior, proximo) => {
+    let total = pesos.reduce((anterior, proximo) => {
       return anterior + proximo
     })
 
