@@ -1,37 +1,37 @@
-const service = require("./service");
+const service = require('./service')
 
 async function main() {
   try {
-    const names = [];
+    const names = []
 
-    const resultado = await service.obterPessoa("a");
+    const resultado = await service.obterPessoa('a')
 
-    console.time("for");
+    console.time('for')
     for (let i = 0; i <= resultado.results.length - 1; i++) {
-      const pessoa = resultado.results[i];
+      const pessoa = resultado.results[i]
 
-      names.push(pessoa.name);
+      names.push(pessoa.name)
     }
-    console.timeEnd("for");
+    console.timeEnd('for')
 
-    console.time("for-in");
+    console.time('for-in')
     for (let i in resultado.results) {
-      const pessoa = resultado.results[i];
+      const pessoa = resultado.results[i]
 
-      names.push(pessoa.name);
+      names.push(pessoa.name)
     }
-    console.timeEnd("for-in");
+    console.timeEnd('for-in')
 
-    console.time("for-of");
+    console.time('for-of')
     for (pessoa of resultado.results) {
-      names.push(pessoa.name);
+      names.push(pessoa.name)
     }
-    console.timeEnd("for-of");
+    console.timeEnd('for-of')
 
-    console.log("Nomes", names);
+    console.log('Nomes', names)
   } catch (erro) {
-    console.error("Erro", erro);
+    console.error('Erro', erro)
   }
 }
 
-main();
+main()

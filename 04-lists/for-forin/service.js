@@ -1,22 +1,22 @@
-const axios = require("axios");
-const URL = "https://swapi.dev/api/people";
+const axios = require('axios')
+const URL = 'https://swapi.dev/api/people'
 
 async function obterPessoa(nome) {
-  const url = `${URL}?search=${nome}&format=json`;
+  const url = `${URL}?search=${nome}&format=json`
 
-  const response = await axios.get(url);
+  const response = await axios.get(url)
 
-  return response.data;
+  return response.data
 }
 
-obterPessoa("r2")
+obterPessoa('r2')
   .then(function (pessoa) {
-    console.log(`Resultado: ${JSON.stringify(pessoa)}`);
+    console.log(`Resultado: ${JSON.stringify(pessoa)}`)
   })
-  .catch((error) => {
-    console.error(`Erro: ${error}`);
-  });
+  .catch(error => {
+    console.error(`Erro: ${error}`)
+  })
 
 module.exports = {
   obterPessoa,
-};
+}

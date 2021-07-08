@@ -1,0 +1,28 @@
+{
+  "name": "erick-wendel-course",
+  "version": "1.0.0",
+  "description": "This repo tracks progress in Erick Wendel's node course (<https://erickwendel.teachable.com/courses>)",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "prettier": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gevertoninc/erick-wendel-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gevertoninc/erick-wendel-course/issues"
+  },
+  "homepage": "https://github.com/gevertoninc/erick-wendel-course#readme",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
