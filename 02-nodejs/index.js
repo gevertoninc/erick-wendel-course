@@ -29,11 +29,11 @@ function obterUsuario() {
       const usuario = {
         id: 1,
         nome: 'Cláudio',
-        dataNascimento: new Date()
+        dataNascimento: new Date(),
       }
 
       resolve(usuario)
-    }, 1000);
+    }, 1000)
   })
 }
 
@@ -41,7 +41,7 @@ function obterTelefone(idUsuario) {
   return new Promise(function resolverTelefone(resolve, reject) {
     setTimeout(() => {
       resolve('991543188')
-    }, 2000);
+    }, 2000)
   })
 }
 
@@ -50,11 +50,11 @@ function obterEndereco(idUsuario) {
     setTimeout(() => {
       const enedeco = {
         rua: 'Rua',
-        numero: 1
+        numero: 1,
       }
 
       resolve(enedeco)
-    }, 3000);
+    }, 3000)
   })
 }
 

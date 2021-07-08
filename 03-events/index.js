@@ -1,6 +1,6 @@
 const EventEmitter = require('events')
 
-class MeuEmissor extends EventEmitter { }
+class MeuEmissor extends EventEmitter {}
 
 const meuEmissor = new MeuEmissor()
 const nomeEvento = 'usuario:click'
@@ -11,7 +11,7 @@ meuEmissor.on(nomeEvento, function click(click) {
 
 setInterval(() => {
   meuEmissor.emit(nomeEvento, 'menu')
-}, 1000);
+}, 1000)
 
 const stdin = process.openStdin()
 
